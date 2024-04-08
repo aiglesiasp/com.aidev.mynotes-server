@@ -14,6 +14,11 @@ plugins {
 group = "com.aidev"
 version = "0.0.1"
 
+sqldelight {
+    database("AppDatabase") {
+        packageName = "com.aidev.kotlin.database"
+    }
+}
 
 application {
     mainClass.set("com.aidev.ApplicationKt")
